@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Lexical Analyzer</title>
+</head>
+
+<header>
+    <div>
+        <h1 id="textHeader">Lexical Analyzer</h1>
+    </div>
+</header>
+
+<body>
+    <div class="separationColumn">
+        <div class="tableColumn">
+            <div class="column">
+                <div class="validatorToken">
+                    <div class="valid-tokens-area">
+                        <div class="title">
+                            Validated words:
+                        </div>
+                        <textarea class="text-area valid-tokens" disabled="disabled" autocomplete="off"
+                        autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="No have tokens"
+                        oncontextmenu="return false;"></textarea>
+                    </div>
+                    <div id="buttonToken">
+                        <input class="inputToken" type=" text" placeholder="Type your token"/>
+                        <button class="clickToken" type=" button"
+                            onclick="addToken()">Confirm</button>
+                    </div>
+                </div>
+                <div class="searchTokens">
+                    <div class="title">
+                        Search Tokens:
+                    </div>
+                    <textarea class="text-area validate-tokens" autocomplete="off" autocorrect="off"
+                        autocapitalize="off" spellcheck="false" placeholder="Write your tokens"
+                        oncontextmenu="return false"></textarea>
+                </div>
+            </div>
+            <div class="body-column body-right-column">
+                <table class="automato-table" cellspacing="0">
+                    <tbody class="bodyTable">
+                        <tr id="automatoHeader" class="tColumns">
+                            <th id="id" class="automato-column">δ</th>
+                            <th id="a" class="automato-column">A</th>
+                            <th id="b" class="automato-column">B</th>
+                            <th id="c" class="automato-column">C</th>
+                            <th id="d" class="automato-column">D</th>
+                            <th id="e" class="automato-column">E</th>
+                            <th id="f" class="automato-column">F</th>
+                            <th id="g" class="automato-column">G</th>
+                            <th id="h" class="automato-column">H</th>
+                            <th id="i" class="automato-column">I</th>
+                            <th id="j" class="automato-column">J</th>
+                            <th id="k" class="automato-column">K</th>
+                            <th id="l" class="automato-column">L</th>
+                            <th id="m" class="automato-column">M</th>
+                            <th id="n" class="automato-column">N</th>
+                            <th id="o" class="automato-column">O</th>
+                            <th id="p" class="automato-column">P</th>
+                            <th id="q" class="automato-column">Q</th>
+                            <th id="r" class="automato-column">R</th>
+                            <th id="s" class="automato-column">S</th>
+                            <th id="t" class="automato-column">T</th>
+                            <th id="u" class="automato-column">U</th>
+                            <th id="v" class="automato-column">V</th>
+                            <th id="w" class="automato-column">W</th>
+                            <th id="x" class="automato-column">X</th>
+                            <th id="y" class="automato-column">Y</th>
+                            <th id="z" class="automato-column">Z</th>
+                        </tr>
+                        <tr id="q0" class="automato-row">
+                            <th id="q0-id" class="automato-column-id" title="Estado inicial">q0</th>
+                            <td id="q0-a" class="cell">-</td>
+                            <td id="q0-b" class="cell">-</td>
+                            <td id="q0-c" class="cell">-</td>
+                            <td id="q0-d" class="cell">-</td>
+                            <td id="q0-e" class="cell">-</td>
+                            <td id="q0-f" class="cell">-</td>
+                            <td id="q0-g" class="cell">-</td>
+                            <td id="q0-h" class="cell">-</td>
+                            <td id="q0-i" class="cell">-</td>
+                            <td id="q0-j" class="cell">-</td>
+                            <td id="q0-k" class="cell">-</td>
+                            <td id="q0-l" class="cell">-</td>
+                            <td id="q0-m" class="cell">-</td>
+                            <td id="q0-n" class="cell">-</td>
+                            <td id="q0-o" class="cell">-</td>
+                            <td id="q0-p" class="cell">-</td>
+                            <td id="q0-q" class="cell">-</td>
+                            <td id="q0-r" class="cell">-</td>
+                            <td id="q0-s" class="cell">-</td>
+                            <td id="q0-t" class="cell">-</td>
+                            <td id="q0-u" class="cell">-</td>
+                            <td id="q0-v" class="cell">-</td>
+                            <td id="q0-w" class="cell">-</td>
+                            <td id="q0-x" class="cell">-</td>
+                            <td id="q0-y" class="cell">-</td>
+                            <td id="q0-z" class="cell">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
